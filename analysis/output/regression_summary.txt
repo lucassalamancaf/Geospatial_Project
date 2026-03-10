@@ -1,0 +1,118 @@
+=== CORRELATIONS ===
+                      statistic correlation
+                         <char>       <num>
+1:                  pearson_raw -0.05581225
+2:                 spearman_raw -0.12501283
+3: pearson_partial_country_year -0.03406262
+
+=== MODELS ===
+OLS estimation, Dep. Var.: ln_y_emp
+Observations: 16,956
+Fixed-effects: country: 23,  year: 18
+Standard-errors: Clustered (NUTS_ID & year) 
+                                                  Estimate Std. Error   t value
+x_demis                                      -0.0000000386 0.00000100 -0.038645
+gdppercapitaconstantprices                    0.0000007502 0.00000226  0.331828
+capitalstock                                  0.0000025267 0.00000203  1.247242
+populationchangeper1000p                      0.0057013784 0.00233580  2.440871
+valueaddedperindustry_sec_B.E                 0.0001849442 0.00006715  2.753995
+grossfixedcapitalformationbyindustry_sec_B.E -0.0001965525 0.00006144 -3.199192
+                                              Pr(>|t|)    
+x_demis                                      0.9696238    
+gdppercapitaconstantprices                   0.7440750    
+capitalstock                                 0.2292185    
+populationchangeper1000p                     0.0258894 *  
+valueaddedperindustry_sec_B.E                0.0135540 *  
+grossfixedcapitalformationbyindustry_sec_B.E 0.0052567 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.549336     Adj. R2: 0.610081
+                 Within R2: 0.466186
+OLS estimation, Dep. Var.: ln_y_emp
+Observations: 16,956
+Fixed-effects: country: 23,  wave: 4
+Standard-errors: Clustered (NUTS_ID & year) 
+                                                  Estimate Std. Error   t value
+x_demis                                      -0.0000000418 0.00000100 -0.041846
+gdppercapitaconstantprices                    0.0000007449 0.00000226  0.329486
+capitalstock                                  0.0000025280 0.00000203  1.248341
+populationchangeper1000p                      0.0056465725 0.00229021  2.465523
+valueaddedperindustry_sec_B.E                 0.0001845149 0.00006688  2.758973
+grossfixedcapitalformationbyindustry_sec_B.E -0.0001951455 0.00006044 -3.228916
+                                              Pr(>|t|)    
+x_demis                                      0.9671088    
+gdppercapitaconstantprices                   0.7458130    
+capitalstock                                 0.2288260    
+populationchangeper1000p                     0.0246222 *  
+valueaddedperindustry_sec_B.E                0.0134132 *  
+grossfixedcapitalformationbyindustry_sec_B.E 0.0049309 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.549612     Adj. R2: 0.610012
+                 Within R2: 0.465943
+OLS estimation, Dep. Var.: ln_y_emp
+Observations: 16,956
+Fixed-effects: NUTS_ID: 942,  year: 18
+Standard-errors: Clustered (NUTS_ID & year) 
+                                                  Estimate Std. Error   t value
+x_demis                                      -1.520000e-09 0.00000100 -0.001522
+gdppercapitaconstantprices                    8.865790e-06 0.00000207  4.280436
+capitalstock                                 -8.902300e-07 0.00000104 -0.852375
+populationchangeper1000p                      2.034346e-03 0.00070678  2.878315
+valueaddedperindustry_sec_B.E                -2.216090e-06 0.00000601 -0.368815
+grossfixedcapitalformationbyindustry_sec_B.E -6.195450e-06 0.00000400 -1.549721
+                                               Pr(>|t|)    
+x_demis                                      0.99880326    
+gdppercapitaconstantprices                   0.00050584 ***
+capitalstock                                 0.40585470    
+populationchangeper1000p                     0.01043076 *  
+valueaddedperindustry_sec_B.E                0.71681905    
+grossfixedcapitalformationbyindustry_sec_B.E 0.13962382    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.065982     Adj. R2: 0.994051
+                 Within R2: 0.144444
+OLS estimation, Dep. Var.: ln_y_emp
+Observations: 16,014
+Fixed-effects: country: 23,  year: 17
+Standard-errors: Clustered (NUTS_ID & year) 
+                                                  Estimate Std. Error   t value
+x_demis_l1                                   -0.0000000385 0.00000100 -0.038510
+gdppercapitaconstantprices                    0.0000006596 0.00000227  0.290937
+capitalstock                                  0.0000026196 0.00000202  1.297493
+populationchangeper1000p                      0.0058076688 0.00231241  2.511527
+valueaddedperindustry_sec_B.E                 0.0001816437 0.00006857  2.649171
+grossfixedcapitalformationbyindustry_sec_B.E -0.0001931202 0.00006476 -2.981966
+                                              Pr(>|t|)    
+x_demis_l1                                   0.9697572    
+gdppercapitaconstantprices                   0.7748371    
+capitalstock                                 0.2128579    
+populationchangeper1000p                     0.0231312 *  
+valueaddedperindustry_sec_B.E                0.0174988 *  
+grossfixedcapitalformationbyindustry_sec_B.E 0.0088044 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.550383     Adj. R2: 0.608197
+                 Within R2: 0.463353
+OLS estimation, Dep. Var.: ln_y_emp
+Observations: 16,956
+Fixed-effects: country: 23,  year: 18
+Standard-errors: Clustered (NUTS_ID & year) 
+                                                  Estimate Std. Error   t value
+x_demis_w                                    -0.0000000795 0.00000100 -0.079521
+gdppercapitaconstantprices                    0.0000007611 0.00000226  0.336608
+capitalstock                                  0.0000025195 0.00000202  1.246227
+populationchangeper1000p                      0.0057133027 0.00233399  2.447867
+valueaddedperindustry_sec_B.E                 0.0001845979 0.00006713  2.749995
+grossfixedcapitalformationbyindustry_sec_B.E -0.0001959722 0.00006148 -3.187582
+                                              Pr(>|t|)    
+x_demis_w                                    0.9375471    
+gdppercapitaconstantprices                   0.7405316    
+capitalstock                                 0.2295818    
+populationchangeper1000p                     0.0255237 *  
+valueaddedperindustry_sec_B.E                0.0136681 *  
+grossfixedcapitalformationbyindustry_sec_B.E 0.0053896 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.549129     Adj. R2: 0.610376
+                 Within R2: 0.466589
