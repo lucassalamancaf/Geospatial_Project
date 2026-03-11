@@ -1,0 +1,12 @@
+file,n_cols,file_size_mb
+ETS_ARDECO_merged/outdir_ardeco_ets_merge/ardeco_ets_merged_noNA.csv,33,3.415
+ETS_ARDECO_merged/outdir_ardeco_ets_merge/ardeco_ets_merged.csv,33,4.773
+ETS_ARDECO_merged/outdir_ardeco_ets_merge/ardeco_panel_premerge.csv,31,4.477
+ETS_ARDECO_merged/outdir_ardeco_ets_merge/ets_panel_final_raw.csv,59,81.761
+ETS_ARDECO_merged/outdir_ardeco_ets_merge/ets_panel_NUTS3aggregate.csv,5,0.664
+ETS_ARDECO_merged/data_eurostat_zip/data_eurostat/out_dir/ardeco_panel_2005_2023_nuts3.csv,104,13.332
+ETS_ARDECO_merged/data_eurostat_zip/data_eurostat/out_dir/ardeco_panel_2005_2023.csv,104,18.275
+ETS_ARDECO_merged/data_eurostat_zip/data_eurostat/out_dir/build_log.csv,4,0.001
+ETS_ARDECO_merged/data_eurostat_zip/data_eurostat/processed_data/ardeco_panel_2005_2023_nuts3.csv,104,13.332
+ETS_ARDECO_merged/data_eurostat_zip/data_eurostat/processed_data/ardeco_panel_2005_2023.csv,104,18.275
+ETS_ARDECO_merged/data_eurostat_zip/data_eurostat/processed_data/build_log.csv,4,0.001

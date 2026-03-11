@@ -1,0 +1,25 @@
+=== CORRELATIONS ===
+                           statistic correlation
+                              <char>       <num>
+1:                       pearson_raw  0.03738790
+2:                      spearman_raw  0.04727391
+3: pearson_partial_country_wave_year  0.02462692
+
+=== CORRELATIONS BY SECTOR ===
+   sector n_obs pearson_raw spearman_raw
+   <char> <int>       <num>        <num>
+1:    B.E 18731   0.0373879   0.04727391
+
+=== FE REGRESSION ===
+OLS estimation, Dep. Var.: d_employment
+Observations: 18,731
+Fixed-effects: country: 25,  wave: 4,  year: 18
+Standard-errors: Clustered (NUTS_ID & year) 
+            Estimate Std. Error t value Pr(>|t|) 
+d_emissions  8.2e-08      1e-06   0.082   0.9356 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 1.77971     Adj. R2: 0.094598
+                Within R2: 6.065e-4
+
+NOTE: wave is a deterministic mapping of year, so fixest may drop one FE due to collinearity.

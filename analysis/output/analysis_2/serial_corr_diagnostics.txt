@@ -1,0 +1,50 @@
+=== CORE FE MODEL ===
+OLS estimation, Dep. Var.: d_employment
+Observations: 18,731
+Fixed-effects: country: 25,  wave: 4,  year: 18
+Standard-errors: Clustered (NUTS_ID & year) 
+            Estimate Std. Error t value Pr(>|t|) 
+d_emissions  8.2e-08      1e-06   0.082   0.9356 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 1.77971     Adj. R2: 0.094598
+                Within R2: 6.065e-4
+
+=== LAG CORRELATIONS ===
+                         metric       value
+                         <char>       <num>
+1:  corr_d_employment_t_tminus1  0.22370546
+2:   corr_d_emissions_t_tminus1 -0.02402272
+3: corr_core_residual_t_tminus1  0.20189949
+
+=== AR(1)-STYLE MODELS ===
+OLS estimation, Dep. Var.: d_employment
+Observations: 17,609
+Fixed-effects: panel_id: 1,098
+Standard-errors: Clustered (NUTS_ID) 
+                Estimate Std. Error t value Pr(>|t|)    
+d_employment_l1 0.154652    0.05944 2.60182 0.009398 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 1.79817     Adj. R2: 0.039414
+                Within R2: 0.023568
+OLS estimation, Dep. Var.: d_emissions
+Observations: 17,609
+Fixed-effects: panel_id: 1,098
+Standard-errors: Clustered (NUTS_ID) 
+                Estimate Std. Error  t value  Pr(>|t|)    
+d_emissions_l1 -0.111939   0.042646 -2.62483 0.0087897 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 519,709.4     Adj. R2: 0.039347
+                  Within R2: 0.012138
+OLS estimation, Dep. Var.: resid_core
+Observations: 17,609
+Fixed-effects: panel_id: 1,098
+Standard-errors: Clustered (NUTS_ID) 
+              Estimate Std. Error t value Pr(>|t|)    
+resid_core_l1  0.13684   0.065166 2.09987 0.035968 *  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 1.71527     Adj. R2: 0.030318
+                Within R2: 0.018426

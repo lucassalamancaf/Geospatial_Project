@@ -1,0 +1,4 @@
+statistic,correlation
+pearson_raw,0.037387900215897
+spearman_raw,0.0472739093248119
+pearson_partial_country_wave_year,0.0246269197826955

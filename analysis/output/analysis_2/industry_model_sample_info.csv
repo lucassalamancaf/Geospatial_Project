@@ -1,0 +1,9 @@
+metric,value
+ardeco_file,ETS_ARDECO_merged/data_eurostat_zip/data_eurostat/out_dir/ardeco_panel_2005_2023_nuts3.csv
+ets_file,ETS_ARDECO_merged/outdir_ardeco_ets_merge/ets_panel_final_raw.csv
+n_obs,18731
+n_regions,1111
+n_countries,25
+n_sectors,1
+year_min,2006
+year_max,2023

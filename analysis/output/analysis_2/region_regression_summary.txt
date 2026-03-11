@@ -1,0 +1,18 @@
+=== REGION CORRELATIONS ===
+                           statistic correlation
+                              <char>       <num>
+1:                       pearson_raw  0.02958880
+2:                      spearman_raw  0.04670327
+3: pearson_partial_country_wave_year  0.01673202
+
+=== REGION FE MODEL ===
+OLS estimation, Dep. Var.: d_employment
+Observations: 20,052
+Fixed-effects: country: 25,  wave: 4,  year: 18
+Standard-errors: Clustered (NUTS_ID & year) 
+            Estimate Std. Error t value Pr(>|t|) 
+d_emissions 5.46e-08      1e-06 0.05463  0.95707 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 1.75492     Adj. R2: 0.090127
+                Within R2: 2.8e-4  

@@ -1,0 +1,4 @@
+metric,value
+corr_d_employment_t_tminus1,0.223705457580521
+corr_d_emissions_t_tminus1,-0.0240227187980838
+corr_core_residual_t_tminus1,0.201899491154276

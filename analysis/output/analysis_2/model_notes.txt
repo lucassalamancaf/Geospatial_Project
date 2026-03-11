@@ -1,0 +1,2 @@
+Model specification requested: d_employment ~ d_emissions | country + wave + year
+Note: wave is a deterministic mapping of year, so one of these FE dimensions may be dropped for collinearity by fixest.
