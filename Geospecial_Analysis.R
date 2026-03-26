@@ -140,3 +140,9 @@ model5 <- feols(c(employmentbyindustry_sec_B.E*1000,
                 panel.id = c("NUTS_ID", "year"))
 summary(model5)
 
+# Regress empl_sh_B_E on verified_pc_delta and gdppercapitaconstantprices, with NUTS_ID and year fixed effects, and two-way clustered errors
+model6 <- feols(empl_sh_B_E ~ verified_pc_delta + gdppercapitaconstantprices 
+        | NUTS_ID + year, data = df, 
+        vcov = "twoway", 
+        panel.id = c("NUTS_ID", "year"))
+
